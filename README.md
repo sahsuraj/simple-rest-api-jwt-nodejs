@@ -19,8 +19,8 @@ To run the project, please use a command line the following:
   
   
 http://localhost:3600/users/
-
-method : post 
+CREATE USER IN MONOGDB DATABASE
+method : POST 
 Headers:
     Accept:application/json
 	Content-Type:application/json
@@ -38,13 +38,14 @@ Response : {
 --------------------------------------------------------------------------------------------------------------
 http://localhost:3600/auth/
 
-method : post 
+GENERATE TOKEN FOR SECURITY
+method : POST 
 Headers:
     Accept:application/json
 	Content-Type:application/json
 	Body json -
 	{
-	   "email" : "sahsuraj@gmail.com",
+	   "email" : "surajs@gmail.com",
 	   "password" : "123456"
 	}
 
@@ -55,11 +56,35 @@ Response : {
 
 --------------------------------------------------------------------------------------------------------------
 http://localhost:3600/users/5cfa3d50c9860a6cd4163830
-	get users data 
+GET USER DATA
 	postman testing process
-	method : post
+	method : GET
 	Headers -
 	Accept:application/json
 	Content-Type:application/json
 	Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9   (valid token pass here)
 
+--------------------------------------------------------------------------------------------------------------
+http://localhost:3600/users/5cfa3d50c9860a6cd4163830
+	UPDATE USER DATA
+	postman testing process
+	method : PATCH
+	Headers -
+	Accept:application/json
+	Content-Type:application/json
+	Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9   (valid token pass here)
+	-------------------for update user firstname and lastname 
+	Body - {
+	"firstName" : "surajs",
+	"lastName" : "sahs"
+}
+
+--------------------------------------------------------------------------------------------------------------
+http://localhost:3600/users/5cfa3d50c9860a6cd4163830
+	DELETE USER DATA
+	postman testing process
+	method : DELETE
+	Headers -
+	Accept:application/json
+	Content-Type:application/json
+	Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9   (valid token pass here)
