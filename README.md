@@ -1,10 +1,5 @@
-# REST API Tutorial
+# REST API Tutorial with JWT & Node.js
 
-This sample is published as part of the blog article at www.toptal.com/blog:
-
-- https://www.toptal.com/nodejs/secure-rest-api-in-nodejs
-
-Visit www.toptal.com/blog and subscribe to our newsletter to read great posts
 
 ## Before using
 
