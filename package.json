@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahsuraj/rest-api-tutorial.git"
+    "url": "git+https://github.com/sahsuraj/simple-rest-api-jwt-nodejs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sahsuraj/rest-api-tutorial/issues"
+    "url": "https://github.com/sahsuraj/simple-rest-api-jwt-nodejs/issues"
   },
-  "homepage": "https://github.com/sahsuraj/rest-api-tutorial#readme",
+  "homepage": "https://github.com/sahsuraj/simple-rest-api-jwt-nodejs#readme",
   "dependencies": {
     "body-parser": "^1.7.0",
     "express": "^4.17.1",
